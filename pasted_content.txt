@@ -1,0 +1,608 @@
+Você atuará como um Staff Machine Learning Engineer + Senior Data Scientist + Arquiteto de Sistemas de IA especializado em OCR, Document AI, benchmarking reprodutível e pipelines locais com GPU NVIDIA.
+
+Seu objetivo é IMPLEMENTAR em código uma bateria profissional de benchmark para OCR e extração documental em PDFs, com foco em execução local em uma máquina com NVIDIA RTX 4070, usando Ollama para manipular os modelos compatíveis e integrando motores externos quando necessário. Ao final, você deve ENTREGAR a análise completa e consolidada, com artefatos reproduzíveis, relatórios e recomendações de arquitetura para um pipeline inteligente de roteamento de documentos.
+
+==================================================
+1. CONTEXTO DO PROBLEMA
+==================================================
+
+Temos uma coleção de PDFs heterogêneos e queremos construir uma bateria de testes para definir a melhor arquitetura de OCR/document parsing para produção.
+
+Desejamos:
+1) medir desempenho por documento e por página;
+2) salvar logs completos de execução;
+3) salvar saídas dos modelos em pastas separadas;
+4) gerar métricas objetivas e comparáveis;
+5) fazer análise semântica automática das saídas;
+6) permitir posterior avaliação humana;
+7) automatizar a seleção de 20 PDFs representativos, com preferência por PDFs mais complexos;
+8) propor uma estrutura de pipeline em produção baseada na complexidade do documento.
+
+A máquina-alvo possui uma NVIDIA RTX 4070. Portanto, a implementação deve explorar CUDA quando aplicável e registrar consumo de recursos.
+
+==================================================
+2. DECISÃO TÉCNICA GLOBAL
+==================================================
+
+Você deve implementar um benchmark híbrido com dois grupos de motores:
+
+A) Motores manipulados via Ollama:
+- OCR VLMs compatíveis com Ollama, priorizando modelos multimodais voltados a OCR e entendimento documental.
+- Incluir pelo menos:
+  - richardyoung/olmocr2 ou equivalente olmOCR disponível no Ollama;
+  - glm-ocr;
+  - pelo menos 1 modelo VLM geral com boa capacidade OCR em Ollama, como MiniCPM-V, Llama 3.2 Vision ou outro justificável.
+Esses modelos devem processar PÁGINAS renderizadas como imagem, porque Ollama trabalha naturalmente com imagens e prompts multimodais. [web:32][web:37][web:40][web:43]
+
+B) Motores externos ao Ollama:
+- Tesseract;
+- Docling;
+- Marker;
+- MarkItDown com OCR/plugin quando viável.
+Esses motores devem ser executados por CLI ou API Python local, fora do Ollama, mas integrados ao mesmo benchmark.
+Observação importante:
+- MarkItDown não deve ser tratado como OCR nativo principal; deve ser classificado como conversor com OCR acoplável quando aplicável. [web:1][web:3]
+- Tesseract deve ser tratado como baseline CPU. [web:16]
+- Docling deve ser tratado como pipeline estruturado/document-aware, com possibilidade de GPU em configurações compatíveis. [page:1]
+- Marker deve ser tratado como parser PDF→Markdown de alta qualidade, com uso de torch/cuda quando suportado. [web:22]
+
+==================================================
+3. OBJETIVO DE ENTREGA
+==================================================
+
+Você deve ENTREGAR:
+1) código funcional e organizado;
+2) estrutura de pastas do projeto;
+3) scripts executáveis;
+4) arquivos de configuração;
+5) instruções de instalação e uso;
+6) benchmark completo com logs por página e por documento;
+7) análise quantitativa;
+8) análise semântica automática;
+9) relatório final com recomendações de arquitetura.
+
+A implementação final deve produzir resultados salvos em disco e um relatório final de benchmarking.
+
+==================================================
+4. RESULTADOS ESPERADOS
+==================================================
+
+Crie um projeto com a seguinte estrutura base:
+
+project_root/
+  README.md
+  pyproject.toml
+  requirements.txt
+  .env.example
+  configs/
+    models.yaml
+    benchmark.yaml
+    prompts.yaml
+  data/
+    raw_pdfs/
+    selected_pdfs/
+    rendered_pages/
+    references/
+  outputs/
+    extracted/
+      <engine_name>/<pdf_name>/
+    normalized/
+      <engine_name>/<pdf_name>/
+    semantic_eval/
+    summaries/
+  logs/
+    runs/
+    pages/
+    system/
+  reports/
+    pdf_inventory.csv
+    pdf_complexity_rank.csv
+    selected_20.csv
+    benchmark_by_page.csv
+    benchmark_by_document.csv
+    model_summary.csv
+    semantic_scores.csv
+    final_report.md
+    final_report.html
+  src/
+    main.py
+    config.py
+    utils/
+      io_utils.py
+      hash_utils.py
+      time_utils.py
+      gpu_monitor.py
+      subprocess_utils.py
+      logging_utils.py
+    ingestion/
+      pdf_inventory.py
+      pdf_sampling.py
+      pdf_render.py
+      pdf_features.py
+    engines/
+      base_engine.py
+      ollama_engine.py
+      tesseract_engine.py
+      docling_engine.py
+      marker_engine.py
+      markitdown_engine.py
+    evaluation/
+      text_normalization.py
+      structure_metrics.py
+      semantic_metrics.py
+      pairwise_comparison.py
+      routing_recommendation.py
+    orchestration/
+      benchmark_runner.py
+      result_aggregator.py
+      report_builder.py
+  notebooks/
+    exploratory_analysis.ipynb
+
+==================================================
+5. PRINCÍPIOS DE IMPLEMENTAÇÃO
+==================================================
+
+Siga obrigatoriamente estes princípios:
+
+1) Reprodutibilidade
+- Fixe seeds quando aplicável.
+- Registre versão dos pacotes.
+- Registre timestamp, hostname, SO, Python version, CUDA availability, nome da GPU.
+- Registre hash SHA256 de cada PDF de entrada.
+- Registre hash das saídas principais.
+
+2) Observabilidade
+- Log estruturado em JSONL.
+- Logs separados por:
+  - execução;
+  - documento;
+  - página;
+  - recursos do sistema.
+- Toda falha deve ser capturada com stack trace e status padronizado.
+
+3) Tolerância a falhas
+- Timeout por documento.
+- Timeout por página para engines page-based.
+- Continuação do benchmark mesmo se um modelo falhar em parte do conjunto.
+- Reprocessamento idempotente com opção --resume.
+
+4) Comparabilidade
+- Normalizar saídas para texto/plaintext e markdown comparável.
+- Registrar texto bruto e texto normalizado.
+- Medir por documento e por página sempre que possível.
+
+5) Arquitetura limpa
+- Use classes para engines.
+- Cada engine deve herdar de uma interface base comum.
+- A orquestração deve ser desacoplada da implementação específica de cada engine.
+
+==================================================
+6. MODELOS E ENGINES A IMPLEMENTAR
+==================================================
+
+Implemente estes engines no benchmark:
+
+6.1 Motores com Ollama
+Crie um engine genérico OllamaEngine com suporte a:
+- envio de imagem por página;
+- prompt customizável por tarefa;
+- structured outputs com JSON schema quando fizer sentido;
+- controle de temperatura=0 para outputs determinísticos. [web:41][web:44]
+
+Modelos mínimos:
+- richardyoung/olmocr2 ou equivalente disponível localmente; [web:32]
+- glm-ocr; [web:37]
+- openbmb/minicpm-v2.5:q6_K ou modelo OCR-capable equivalente no Ollama; [web:40]
+
+Se o ambiente local não suportar algum dos nomes exatos, implemente fallback configurável via models.yaml.
+
+Para cada página processada por Ollama:
+- renderizar página do PDF em imagem PNG com DPI configurável;
+- enviar a imagem para o modelo;
+- usar prompt especializado para OCR fiel;
+- opcionalmente pedir saída em JSON estruturado contendo:
+  {
+    "page_number": int,
+    "language_guess": str,
+    "rotation_guess": int,
+    "has_tables": bool,
+    "has_images": bool,
+    "text_markdown": str,
+    "text_plain": str
+  }
+- validar o JSON com schema/Pydantic. [web:41]
+
+6.2 TesseractEngine
+- Implementar execução via pytesseract ou CLI.
+- Salvar texto por página.
+- Se possível, salvar TSV/HOCR para métricas estruturais.
+- Tratar como baseline CPU. [web:16][web:26]
+
+6.3 DoclingEngine
+- Implementar integração Python ou CLI.
+- Executar OCR/configuração compatível.
+- Explorar GPU apenas se configurado e suportado.
+- Salvar markdown/text/json resultante quando disponível. [page:1][web:21]
+
+6.4 MarkerEngine
+- Implementar integração CLI/Python.
+- Forçar CUDA quando disponível/configurado.
+- Salvar markdown e metadados. [web:22]
+
+6.5 MarkItDownEngine
+- Implementar apenas se houver caminho OCR/plugin configurável e funcional.
+- Caso não haja OCR disponível no ambiente, o engine deve marcar status “unsupported_or_partial” e documentar isso claramente no relatório. [web:1][web:3]
+
+==================================================
+7. SELEÇÃO AUTOMÁTICA DOS 20 PDFs
+==================================================
+
+Implemente um processo de amostragem inteligente dos PDFs.
+
+7.1 Inventário inicial
+Crie um script para varrer uma pasta grande de PDFs candidatos e gerar inventário com:
+- nome do arquivo;
+- caminho;
+- hash SHA256;
+- tamanho do arquivo;
+- número de páginas;
+- largura/altura média de página;
+- presença de texto nativo;
+- densidade de texto nativo;
+- número estimado de imagens por página;
+- proporção de páginas escaneadas;
+- idioma provável;
+- presença provável de tabela;
+- rotação ou orientação irregular;
+- heterogeneidade entre páginas.
+
+7.2 Score de complexidade
+Calcule um complexity_score por documento, com lógica transparente e configurável.
+Use uma fórmula base semelhante a:
+
+score =
+0.20 * scan_ratio +
+0.15 * image_density +
+0.15 * table_density +
+0.10 * rotation_irregularity +
+0.10 * multi_column_likelihood +
+0.10 * language_uncertainty +
+0.10 * low_native_text_ratio +
+0.10 * page_count_scaled
+
+Normalize tudo entre 0 e 1.
+
+7.3 Seleção dos 20 PDFs
+Implemente uma seleção estratificada:
+- 8 PDFs de alta complexidade;
+- 6 PDFs de média complexidade;
+- 4 PDFs de baixa complexidade;
+- 2 outliers específicos.
+
+Além disso:
+- evite PDFs quase duplicados;
+- maximize diversidade de tamanho, layout e tipo documental;
+- salve selected_20.csv com justificativa por arquivo.
+
+Se houver poucos PDFs disponíveis, degrade graciosamente e documente o critério usado.
+
+==================================================
+8. FLUXO DO BENCHMARK
+==================================================
+
+Implemente o pipeline abaixo:
+
+ETAPA 1: inventário dos PDFs
+ETAPA 2: cálculo de complexidade
+ETAPA 3: seleção automática dos 20 PDFs
+ETAPA 4: renderização das páginas em PNG
+ETAPA 5: execução dos engines
+ETAPA 6: coleta de métricas por página
+ETAPA 7: agregação por documento
+ETAPA 8: análise semântica automática
+ETAPA 9: geração de relatórios e recomendação de pipeline
+
+==================================================
+9. MÉTRICAS A COLETAR
+==================================================
+
+Colete obrigatoriamente:
+
+9.1 Métricas por página
+- model_name
+- engine_name
+- pdf_name
+- page_number
+- page_render_dpi
+- elapsed_ms
+- success/failure
+- chars_extracted
+- words_extracted
+- lines_extracted
+- output_bytes
+- detected_language
+- has_tables
+- has_images
+- vram_mb_peak
+- ram_mb_peak
+- gpu_util_peak
+- cpu_percent_avg
+- status
+- error_type
+- error_message
+
+9.2 Métricas por documento
+- total_pages
+- pages_processed
+- total_elapsed_s
+- avg_ms_per_page
+- median_ms_per_page
+- p95_ms_per_page
+- pages_per_second
+- chars_total
+- words_total
+- failures_count
+- success_rate
+- peak_vram_mb
+- peak_ram_mb
+
+9.3 Métricas de qualidade proxy
+- ratio_text_nonempty_pages
+- average_chars_per_page
+- markdown_structure_score
+- table_preservation_score
+- heading_preservation_score
+- noise_score
+- repeated_fragment_score
+- blank_page_false_negative_rate
+
+==================================================
+10. MONITORAMENTO DE RECURSOS
+==================================================
+
+Implemente monitoramento de sistema durante as execuções:
+- GPU via nvidia-smi;
+- RAM/CPU via psutil;
+- timestamp a cada intervalo configurável;
+- associação do uso de recursos ao processo/execução sempre que possível.
+
+Se nvidia-smi falhar:
+- registrar gracefully;
+- continuar benchmark com status degradado.
+
+==================================================
+11. NORMALIZAÇÃO DAS SAÍDAS
+==================================================
+
+Implemente um módulo robusto de normalização textual para comparação:
+- remoção de espaços excessivos;
+- normalização Unicode;
+- preservação opcional de quebras de linha;
+- versão plain text;
+- versão markdown-clean;
+- remoção opcional de cabeçalhos/rodapés repetitivos detectados;
+- padronização para comparação semântica.
+
+Salve:
+- output bruto;
+- output normalizado;
+- metadados.
+
+==================================================
+12. ANÁLISE SEMÂNTICA AUTOMÁTICA
+==================================================
+
+Implemente análise semântica automática das saídas para apoiar a revisão humana.
+
+Como nem sempre teremos ground truth, implemente três estratégias:
+
+12.1 Consenso entre modelos
+- Compare a similaridade semântica entre as saídas dos diferentes modelos para a mesma página/documento.
+- Gere uma matriz de concordância.
+
+12.2 Similaridade textual e estrutural
+Use métricas como:
+- cosine similarity via embeddings;
+- Levenshtein ratio;
+- Jaccard de n-grams;
+- sobreposição de headings;
+- sobreposição de blocos/tabulações.
+
+12.3 Score composto
+Crie um semantic_quality_score por saída, combinando:
+- concordância com o consenso;
+- completude de texto;
+- baixa taxa de ruído;
+- preservação estrutural.
+
+Se possível, use um modelo local de embeddings para comparação.
+Se optar por Ollama para análise estrutural/semântica, faça isso de forma reprodutível e com schema fixo.
+
+==================================================
+13. AVALIAÇÃO HUMANA
+==================================================
+
+Gere um artefato para revisão humana posterior:
+- CSV ou planilha com uma linha por documento-modelo;
+- campos para notas humanas de 1 a 5:
+  - legibilidade;
+  - ordem de leitura;
+  - estrutura;
+  - tabelas;
+  - perda de conteúdo;
+  - ruído/alucinação;
+  - nota final.
+Inclua colunas com links/caminhos para os outputs.
+
+==================================================
+14. RELATÓRIO FINAL
+==================================================
+
+Você deve gerar um relatório final completo em Markdown e HTML com:
+
+14.1 Resumo executivo
+- melhores modelos por velocidade;
+- melhores por robustez;
+- melhores por qualidade proxy;
+- melhores por perfil de documento.
+
+14.2 Tabelas
+- ranking global;
+- ranking por tipo de PDF;
+- ranking por complexidade;
+- custo computacional por modelo.
+
+14.3 Achados
+- padrões observados;
+- trade-offs entre velocidade e qualidade;
+- quais engines falham mais em scans ruins;
+- quais lidam melhor com tabelas, documentos densos e páginas multi-coluna.
+
+14.4 Recomendação de pipeline
+Proponha um pipeline de produção com roteamento por complexidade, por exemplo:
+- texto nativo simples → extração leve/MarkItDown;
+- scan simples → Tesseract;
+- médio estruturado → Docling;
+- complexo/tabelas/layout difícil → Marker ou OCR via VLM/Ollama;
+- fallback em cascata em caso de falha.
+
+14.5 Limitações
+- ausência de ground truth humano definitivo;
+- variação por idioma e domínio documental;
+- modelos Ollama dependem de renderização por página e podem ser mais lentos.
+
+==================================================
+15. DECISÕES IMPORTANTES DE IMPLEMENTAÇÃO
+==================================================
+
+Tome as seguintes decisões, salvo impossibilidade técnica explícita:
+
+1) Linguagem principal: Python 3.11+
+2) Configuração: YAML + Pydantic
+3) CLI principal via argparse ou typer
+4) Logs em JSONL
+5) Tabelas finais em CSV
+6) Relatório final em Markdown + HTML
+7) Renderização de PDF em imagem usando biblioteca robusta
+8) Paralelismo controlado por configuração, sem estourar VRAM
+9) Batch de páginas opcional, mas padrão conservador
+10) Engine-based design com interface comum
+
+==================================================
+16. INTERFACE DE LINHA DE COMANDO
+==================================================
+
+Implemente pelo menos estes comandos:
+
+1) Inventário
+python -m src.main inventory --input data/raw_pdfs --output reports/
+
+2) Seleção
+python -m src.main select --inventory reports/pdf_inventory.csv --output reports/selected_20.csv
+
+3) Benchmark
+python -m src.main benchmark --config configs/benchmark.yaml
+
+4) Agregação
+python -m src.main aggregate --config configs/benchmark.yaml
+
+5) Relatório
+python -m src.main report --config configs/benchmark.yaml
+
+6) Pipeline completo
+python -m src.main all --config configs/benchmark.yaml
+
+==================================================
+17. PROMPTS PARA OLLAMA
+==================================================
+
+Projete prompts especializados para OCR fiel e estrutura documental.
+
+17.1 Prompt base para OCR por página
+Instruções:
+- extrair TODO o texto visível;
+- preservar ordem de leitura natural;
+- não resumir;
+- não interpretar;
+- não corrigir livremente;
+- preservar títulos, listas, tabelas simples e blocos;
+- indicar incerteza em trechos ilegíveis;
+- não inventar conteúdo.
+
+17.2 Prompt estruturado
+Quando usar structured outputs, retornar JSON válido seguindo schema.
+Temperatura = 0. [web:41]
+
+17.3 Prompt para análise semântica
+Se usar LLM local para auxiliar na avaliação:
+- comparar duas saídas;
+- identificar qual é mais completa;
+- apontar perdas, ruídos e erros estruturais;
+- retornar apenas JSON validável.
+
+==================================================
+18. REQUISITOS DE QUALIDADE DE CÓDIGO
+==================================================
+
+Seu código deve:
+- ser modular;
+- ter type hints;
+- usar dataclasses ou Pydantic quando fizer sentido;
+- ter docstrings úteis;
+- evitar lógica duplicada;
+- incluir tratamento de exceções;
+- produzir artefatos claros e reproduzíveis.
+
+Inclua:
+- README com setup completo;
+- instruções para instalar Ollama;
+- instruções para pull dos modelos;
+- instruções para Tesseract/Docling/Marker/MarkItDown;
+- exemplos de execução.
+
+==================================================
+19. REQUISITOS DE SAÍDA DO SEU TRABALHO
+==================================================
+
+Ao final da sua execução, você deve retornar:
+
+1) Arquitetura explicada;
+2) Estrutura do projeto;
+3) Código completo de todos os arquivos principais;
+4) Conteúdo dos YAMLs de configuração;
+5) Instruções de execução;
+6) Estratégia de monitoramento;
+7) Estratégia de análise semântica;
+8) Estratégia de recomendação de pipeline;
+9) Exemplo de relatório final esperado;
+10) Checklist do que ficou pronto;
+11) Limitações e próximos passos.
+
+IMPORTANTE:
+- Não entregue apenas pseudocódigo.
+- Entregue código real, funcional e organizado.
+- Se algum engine não puder ser plenamente implementado no ambiente, implemente a interface, o tratamento de indisponibilidade e a documentação clara no relatório.
+- Sempre prefira soluções executáveis, reproduzíveis e auditáveis.
+
+==================================================
+20. ORDEM DE EXECUÇÃO DO SEU TRABALHO
+==================================================
+
+Siga esta ordem:
+1) explique a arquitetura;
+2) mostre a estrutura de pastas;
+3) gere os arquivos de configuração;
+4) implemente utilitários;
+5) implemente inventário e seleção de PDFs;
+6) implemente engines;
+7) implemente orquestração do benchmark;
+8) implemente agregação;
+9) implemente análise semântica;
+10) implemente geração de relatório;
+11) apresente instruções de uso;
+12) apresente análise final e recomendação de pipeline.
+
+Se precisar assumir algo, documente a hipótese explicitamente.
+
+Agora comece a implementação.

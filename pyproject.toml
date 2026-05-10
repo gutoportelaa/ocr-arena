@@ -1,0 +1,33 @@
+[project]
+name = "ocr_benchmark"
+version = "0.1.0"
+description = "Benchmark profissional para OCR e extração documental em PDFs."
+authors = [
+    { name = "Manus AI", email = "ai@manus.im" }
+]
+dependencies = [
+    "pydantic>=2.0",
+    "PyYAML>=6.0",
+    "ollama>=0.1.0",
+    "Pillow>=10.0",
+    "python-tesseract>=0.3.10",
+    "pdf2image>=1.16.0",
+    "pandas>=2.0",
+    "numpy>=1.26.0",
+    "scikit-learn>=1.4.0",
+    "torch>=2.0",
+    "torchvision>=0.17.0",
+    "transformers>=4.38.0",
+    "sentence-transformers>=2.2.2",
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "loguru>=0.7.2",
+    "python-dotenv>=1.0.0"
+]
+
+[project.scripts]
+ocr_benchmark = "src.main:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

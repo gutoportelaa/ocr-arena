@@ -1,0 +1,32 @@
+benchmark_settings:
+  output_base_dir: "./outputs"
+  log_base_dir: "./logs"
+  reports_base_dir: "./reports"
+  data_base_dir: "./data"
+  timeout_per_document: 300 # seconds
+  timeout_per_page: 60 # seconds
+  dpi_render: 300 # DPI for rendering PDF pages to images
+  resume_on_failure: true
+  random_seed: 42
+
+pdf_selection:
+  raw_pdfs_dir: "${DATA_DIR}/raw_pdfs"
+  selected_pdfs_dir: "${DATA_DIR}/selected_pdfs"
+  num_high_complexity: 8
+  num_medium_complexity: 6
+  num_low_complexity: 4
+  num_outliers: 2
+  complexity_weights:
+    scan_ratio: 0.20
+    image_density: 0.15
+    table_density: 0.15
+    rotation_irregularity: 0.10
+    multi_column_likelihood: 0.10
+    language_uncertainty: 0.10
+    low_native_text_ratio: 0.10
+    page_count_scaled: 0.10
+
+evaluation_settings:
+  semantic_eval_model: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2" # Example model for semantic comparison
+  semantic_eval_threshold: 0.7
+

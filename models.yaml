@@ -1,0 +1,68 @@
+ollama_models:
+  olmocr2:
+    name: "richardyoung/olmocr2"
+    prompt_template: "Extract all visible text from this image, preserving natural reading order. Do not summarize, interpret, or freely correct. Preserve titles, lists, simple tables, and blocks. Indicate uncertainty for illegible sections. Do not invent content."
+    json_schema: |
+      {
+        "type": "object",
+        "properties": {
+          "page_number": {"type": "integer"},
+          "language_guess": {"type": "string"},
+          "rotation_guess": {"type": "integer"},
+          "has_tables": {"type": "boolean"},
+          "has_images": {"type": "boolean"},
+          "text_markdown": {"type": "string"},
+          "text_plain": {"type": "string"}
+        },
+        "required": ["page_number", "text_markdown", "text_plain"]
+      }
+  glm_ocr:
+    name: "glm-ocr"
+    prompt_template: "Extract all visible text from this image, preserving natural reading order. Do not summarize, interpret, or freely correct. Preserve titles, lists, simple tables, and blocks. Indicate uncertainty for illegible sections. Do not invent content."
+    json_schema: |
+      {
+        "type": "object",
+        "properties": {
+          "page_number": {"type": "integer"},
+          "language_guess": {"type": "string"},
+          "rotation_guess": {"type": "integer"},
+          "has_tables": {"type": "boolean"},
+          "has_images": {"type": "boolean"},
+          "text_markdown": {"type": "string"},
+          "text_plain": {"type": "string"}
+        },
+        "required": ["page_number", "text_markdown", "text_plain"]
+      }
+  minicpm_v:
+    name: "openbmb/minicpm-v2.5:q6_K"
+    prompt_template: "Extract all visible text from this image, preserving natural reading order. Do not summarize, interpret, or freely correct. Preserve titles, lists, simple tables, and blocks. Indicate uncertainty for illegible sections. Do not invent content."
+    json_schema: |
+      {
+        "type": "object",
+        "properties": {
+          "page_number": {"type": "integer"},
+          "language_guess": {"type": "string"},
+          "rotation_guess": {"type": "integer"},
+          "has_tables": {"type": "boolean"},
+          "has_images": {"type": "boolean"},
+          "text_markdown": {"type": "string"},
+          "text_plain": {"type": "string"}
+        },
+        "required": ["page_number", "text_markdown", "text_plain"]
+      }
+
+external_engines:
+  tesseract:
+    enabled: true
+    path: "${TESSERACT_PATH}"
+    language: "por+eng"
+  docling:
+    enabled: false # Requires API key and endpoint configuration
+    api_key: "${DOCLING_API_KEY}"
+    endpoint: "${DOCLING_ENDPOINT}"
+  marker:
+    enabled: false # Requires local installation and model path
+    model_path: "${MARKER_MODEL_PATH}"
+  markitdown:
+    enabled: false # Requires specific OCR plugin/setup
+    # Configuration for MarkItDown OCR plugin if available
