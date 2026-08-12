@@ -1,0 +1,186 @@
+engine,pdf,page,success,execution_time,chars_extracted,error
+docling,doc1,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc10,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc11,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc12,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc13,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc14,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc15,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc16,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc17,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc18,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc19,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc2,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc20,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc3,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc4,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc5,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc6,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc7,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc8,,False,0.0,0,'int' object has no attribute 'page_no'
+docling,doc9,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc1,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc10,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc11,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc12,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc13,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc14,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc15,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc16,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc17,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc18,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc19,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc2,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc20,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc3,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc4,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc5,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc6,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc7,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc8,,False,0.0,0,'int' object has no attribute 'page_no'
+docling_gpu,doc9,,False,0.0,0,'int' object has no attribute 'page_no'
+glm_ocr,doc1,1.0,True,4.84744083699843,18,
+glm_ocr,doc10,1.0,True,5.016816495999592,18,
+glm_ocr,doc10,2.0,True,1.0656669350009906,18,
+glm_ocr,doc11,1.0,True,4.637215190999996,18,
+glm_ocr,doc12,1.0,True,4.786668833001386,18,
+glm_ocr,doc13,1.0,True,4.71118012900115,18,
+glm_ocr,doc13,2.0,True,1.0037872509983572,18,
+glm_ocr,doc14,1.0,True,4.739043829002185,18,
+glm_ocr,doc15,1.0,True,4.555837986001279,18,
+glm_ocr,doc16,1.0,True,4.630409535999206,18,
+glm_ocr,doc17,1.0,True,4.99151287100176,18,
+glm_ocr,doc18,1.0,True,5.40791815600096,18,
+glm_ocr,doc19,1.0,True,4.594265096002346,18,
+glm_ocr,doc2,1.0,True,4.645784681000805,18,
+glm_ocr,doc20,1.0,True,4.666919086001144,18,
+glm_ocr,doc3,1.0,True,5.0560812529984105,18,
+glm_ocr,doc4,1.0,True,4.518919329999335,18,
+glm_ocr,doc5,1.0,True,5.024961954997707,18,
+glm_ocr,doc6,1.0,True,4.403167153999675,18,
+glm_ocr,doc7,1.0,True,5.175845890000346,18,
+glm_ocr,doc7,2.0,True,1.1198315630026627,18,
+glm_ocr,doc7,3.0,True,1.0873784910072573,18,
+glm_ocr,doc7,4.0,True,1.0645677610009443,18,
+glm_ocr,doc7,5.0,True,1.0425734529999318,18,
+glm_ocr,doc7,6.0,True,1.0968457699927967,18,
+glm_ocr,doc7,7.0,True,1.10584014300548,18,
+glm_ocr,doc7,8.0,True,1.044580488000065,18,
+glm_ocr,doc8,1.0,True,4.828560573001596,18,
+glm_ocr,doc9,1.0,True,4.645948901001248,18,
+minicpm_v,doc1,1.0,True,15.59699736499897,142,
+minicpm_v,doc10,1.0,True,892.2482948240013,50419,
+minicpm_v,doc10,2.0,True,9.968906807000167,34,
+minicpm_v,doc11,1.0,True,22.574723343997903,431,
+minicpm_v,doc12,1.0,True,890.2616924610011,46453,
+minicpm_v,doc13,1.0,True,7.702738136000335,145,
+minicpm_v,doc13,2.0,True,888.1917688909998,74685,
+minicpm_v,doc14,1.0,True,28.67783921999944,961,
+minicpm_v,doc15,1.0,True,15.633210162999603,148,
+minicpm_v,doc16,1.0,True,879.1606468009995,38824,
+minicpm_v,doc17,1.0,True,18.204540042002918,143,
+minicpm_v,doc18,1.0,True,15.322019497001747,176,
+minicpm_v,doc19,1.0,True,6.617121471001155,110,
+minicpm_v,doc2,1.0,True,15.735518486999354,180,
+minicpm_v,doc20,1.0,True,18.145343488002254,358,
+minicpm_v,doc3,1.0,True,15.123082889000216,136,
+minicpm_v,doc4,1.0,True,891.9923715089972,58095,
+minicpm_v,doc5,1.0,True,16.31366593400162,696,
+minicpm_v,doc6,1.0,True,884.3455750329995,47867,
+minicpm_v,doc7,1.0,True,26.917102954001166,94,
+minicpm_v,doc7,2.0,True,13.439846847999434,230,
+minicpm_v,doc7,3.0,True,11.19209958600004,86,
+minicpm_v,doc7,4.0,True,11.384675604998847,86,
+minicpm_v,doc7,5.0,True,10.277234866000072,8,
+minicpm_v,doc7,6.0,True,16.164500161001342,350,
+minicpm_v,doc7,7.0,True,11.113499043000047,86,
+minicpm_v,doc7,8.0,True,15.678188890000456,375,
+minicpm_v,doc8,1.0,True,7.401397319001262,103,
+minicpm_v,doc9,1.0,True,14.479262073000427,176,
+olmocr2,doc1,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc10,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc10,2.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc11,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc12,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc13,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc13,2.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc14,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc15,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc16,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc17,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc18,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc19,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc2,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc20,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc3,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc4,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc5,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc6,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc7,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc7,2.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc7,3.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc7,4.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc7,5.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc7,6.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc7,7.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc7,8.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc8,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+olmocr2,doc9,1.0,False,0.0,0,model 'richardyoung/olmocr2' not found (status code: 404)
+tesseract,doc1,1.0,True,4.150032696081325,5205,
+tesseract,doc10,1.0,True,3.1105593430111185,1920,
+tesseract,doc10,2.0,True,3.118880741065368,2634,
+tesseract,doc11,1.0,True,3.913558578933589,4309,
+tesseract,doc12,1.0,True,4.905738122062758,5151,
+tesseract,doc13,1.0,True,4.474594819941558,5906,
+tesseract,doc13,2.0,True,2.561911575961858,2585,
+tesseract,doc14,1.0,True,3.4117067989427596,4292,
+tesseract,doc15,1.0,True,3.1660107590723783,2833,
+tesseract,doc16,1.0,True,4.62573299894575,4759,
+tesseract,doc17,1.0,True,4.070696729933843,5242,
+tesseract,doc18,1.0,True,5.732199184014462,7468,
+tesseract,doc19,1.0,True,4.929052920080721,6094,
+tesseract,doc2,1.0,True,4.908605873933993,7146,
+tesseract,doc20,1.0,True,5.761709344922565,6961,
+tesseract,doc3,1.0,True,3.2260498111136258,4023,
+tesseract,doc4,1.0,True,3.3296210570260882,4235,
+tesseract,doc5,1.0,True,6.197288498049602,5854,
+tesseract,doc6,1.0,True,3.9156309319660068,4387,
+tesseract,doc7,1.0,True,6.028940294985659,6679,
+tesseract,doc7,2.0,True,4.519813158083707,5086,
+tesseract,doc7,3.0,True,3.738552971975878,4820,
+tesseract,doc7,4.0,True,4.368915764964186,6079,
+tesseract,doc7,5.0,True,5.007555902004242,6661,
+tesseract,doc7,6.0,True,7.4188937350409105,9482,
+tesseract,doc7,7.0,True,6.41001117695123,8224,
+tesseract,doc7,8.0,True,3.2500938000157475,3561,
+tesseract,doc8,1.0,True,4.566999010043219,5120,
+tesseract,doc9,1.0,True,4.572520486894064,5953,
+unlimited_ocr,doc1.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc10.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc10.pdf,2.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc11.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc12.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc13.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc13.pdf,2.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc14.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc15.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc16.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc17.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc18.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc19.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc2.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc20.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc3.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc4.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc5.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc6.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc7.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc7.pdf,2.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc7.pdf,3.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc7.pdf,4.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc7.pdf,5.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc7.pdf,6.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc7.pdf,7.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc7.pdf,8.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc8.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
+unlimited_ocr,doc9.pdf,1.0,False,0.0,0,Torch not compiled with CUDA enabled
