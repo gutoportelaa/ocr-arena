@@ -13,6 +13,7 @@ from src.engines.tesseract_engine import TesseractEngine
 from src.engines.docling_engine import DoclingEngine
 from src.engines.marker_engine import MarkerEngine
 from src.engines.markitdown_engine import MarkItDownEngine
+from src.engines.unlimited_ocr_engine import UnlimitedOCREngine
 from src.orchestration.benchmark_runner import BenchmarkRunner
 from src.orchestration.result_aggregator import ResultAggregator
 from src.orchestration.report_builder import ReportBuilder
@@ -85,7 +86,8 @@ def main():
         
         engines = []
         for model_name, model_config in config.models.get("ollama_models", {}).items():
-            engines.append(OllamaEngine(model_name, model_config))
+            if model_config.get("enabled", True):
+                engines.append(OllamaEngine(model_name, model_config))
         
         tesseract_config = config.models.get("external_engines", {}).get("tesseract", {})
         if tesseract_config.get("enabled", False):
@@ -95,6 +97,10 @@ def main():
         if docling_config.get("enabled", False):
             engines.append(DoclingEngine("docling", docling_config))
 
+        docling_gpu_config = config.models.get("external_engines", {}).get("docling_gpu", {})
+        if docling_gpu_config.get("enabled", False):
+            engines.append(DoclingEngine("docling_gpu", docling_gpu_config))
+
         marker_config = config.models.get("external_engines", {}).get("marker", {})
         if marker_config.get("enabled", False):
             engines.append(MarkerEngine("marker", marker_config))
@@ -102,6 +108,10 @@ def main():
         markitdown_config = config.models.get("external_engines", {}).get("markitdown", {})
         if markitdown_config.get("enabled", False):
             engines.append(MarkItDownEngine("markitdown", markitdown_config))
+
+        unlimited_ocr_config = config.models.get("external_engines", {}).get("unlimited_ocr", {})
+        if unlimited_ocr_config.get("enabled", False):
+            engines.append(UnlimitedOCREngine("unlimited_ocr", unlimited_ocr_config))
 
         runner = BenchmarkRunner(engines, config.benchmark["benchmark_settings"])
         all_results = runner.run(selected_pdfs)
@@ -149,7 +159,8 @@ def main():
         # 3. Benchmark
         engines = []
         for model_name, model_config in config.models.get("ollama_models", {}).items():
-            engines.append(OllamaEngine(model_name, model_config))
+            if model_config.get("enabled", True):
+                engines.append(OllamaEngine(model_name, model_config))
         
         tesseract_config = config.models.get("external_engines", {}).get("tesseract", {})
         if tesseract_config.get("enabled", False):
@@ -159,6 +170,10 @@ def main():
         if docling_config.get("enabled", False):
             engines.append(DoclingEngine("docling", docling_config))
 
+        docling_gpu_config = config.models.get("external_engines", {}).get("docling_gpu", {})
+        if docling_gpu_config.get("enabled", False):
+            engines.append(DoclingEngine("docling_gpu", docling_gpu_config))
+
         marker_config = config.models.get("external_engines", {}).get("marker", {})
         if marker_config.get("enabled", False):
             engines.append(MarkerEngine("marker", marker_config))
@@ -166,6 +181,10 @@ def main():
         markitdown_config = config.models.get("external_engines", {}).get("markitdown", {})
         if markitdown_config.get("enabled", False):
             engines.append(MarkItDownEngine("markitdown", markitdown_config))
+
+        unlimited_ocr_config = config.models.get("external_engines", {}).get("unlimited_ocr", {})
+        if unlimited_ocr_config.get("enabled", False):
+            engines.append(UnlimitedOCREngine("unlimited_ocr", unlimited_ocr_config))
 
         runner = BenchmarkRunner(engines, config.benchmark["benchmark_settings"])
         runner.run(df_selected)

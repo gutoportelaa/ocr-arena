@@ -1,7 +1,19 @@
-import torch
 from typing import Dict, Any
 
+try:
+    import torch
+except Exception:
+    torch = None
+
 def get_gpu_info() -> Dict[str, Any]:
+    if torch is None:
+        return {
+            "cuda_available": False,
+            "gpu_count": 0,
+            "gpus": [],
+            "error": "torch_or_cuda_unavailable",
+        }
+
     info = {
         "cuda_available": torch.cuda.is_available(),
         "gpu_count": torch.cuda.device_count() if torch.cuda.is_available() else 0,
@@ -21,6 +33,9 @@ def get_gpu_info() -> Dict[str, Any]:
 
 def get_gpu_memory_usage() -> Dict[int, Dict[str, float]]:
     usage = {}
+    if torch is None:
+        return usage
+
     if torch.cuda.is_available():
         for i in range(torch.cuda.device_count()):
             usage[i] = {

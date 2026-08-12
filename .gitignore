@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ── ocr-arena: artefatos locais ──────────────────────────────────────────────
+# Páginas rasterizadas: derivadas de data/raw_pdfs, regeneráveis pelo pipeline
+data/rendered_pages/
+logs/
