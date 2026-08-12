@@ -1,0 +1,15 @@
+{
+  "engine": "glm_ocr",
+  "pdf": "doc1",
+  "page": 1,
+  "success": true,
+  "error": null,
+  "execution_time": 4.84744083699843,
+  "metadata": {
+    "total_duration": 4836348147,
+    "load_duration": 3637594906,
+    "prompt_eval_count": 58,
+    "eval_count": 8,
+    "text": "title="
+  }
+}

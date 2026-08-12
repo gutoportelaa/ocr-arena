@@ -1,0 +1,1 @@
+{ "data": [ { "type": "license", "content": "CC BY 4.0" }, { "type": "license", "content": "CC BY 4.0" } ], "source": [ "https://commons.wikimedia.org/wiki/File:Certidao_de_nascimento_Jos%C3%A9_Abra%C3%A1o_Souza_de_Castelo_Branco.jpg", "https://pt.wikipedia.org/wiki/Ficheiro:Certid%C3%A2o_de_nascimento_Jos%C3%A9_Abra%C3%A1o_Souza_de_Castelo_Branco.jpg" ] }

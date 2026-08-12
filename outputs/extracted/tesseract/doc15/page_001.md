@@ -1,0 +1,73 @@
+Ano XXIII + Teresina (Pl) - Sexta-Feira, 14 de Fevereiro de 2025 * Edição VCCLXI
+
+Id:0047F28AF69167FD
+
+Estado do Piauí RELATÓRIO DE GESTÃO FISCAL
+PREFEITURA MUNICIPAL DE SÃO JOÃO DA SERRA GARANTIAS E CONTRAGARANTIAS DE VALORES
+CNPJ: 06.554.331/0001-50 ORÇAMENTOS FISCAL E DA SEGURIDADE SOCIAL
+Período: JANEIRO a DEZEMBRO/2024 LRF, Art 55, inciso I, alínea "c" e art 40, S 1º
+
+ANEXO III
+
+AOS ESTADOS (1) 0,00 0,00
+
+0,00 0,00
+Em Operações de Crédito Externas 0,00 0,00 0,00 0,00
+Em Operações de Crédito Internas 0,00 0,00 0,00 0,00
+AOS MUNICÍPIOS (II) 0,00 0,00 0,00 0,00
+Em Operações de Crédito Externas 0,00 0,00 0,00 0,00
+Em Operações de Crédito Internas 0,00 0,00 0,00 0,00
+ÀS ENTIDADES CONTROLADAS (III) 0,00 0,00 0,00 0,00
+Em Operações de Crédito Externas 0,00 0,00 0,00 0,00
+Em Operações de Crédito Internas 0,00 0,00 0,00
+POR MEIO DE FUNDOS E PROGRAMAS (IV) 0,00 0,00 0,00
+TOTAL GARANTIAS CONCEDIDAS (V) = (I + II + III + IV)
+0,00 0,00 0,00 0,00
+RECEITA CORRENTE LÍQUIDA - RCL (VI) 26.278.238,30 27.568.626,91 29 , 1130517589 29.726.781,22
+(-) Transferências Obrigatórias da União relativas às Emendas Individuais (art. 166-A, S 1º, da CF) (VII) 2
+0,00 400.000,00 400.000,00 400.000,00
+(=) RECEITA CORRENTE LIQUIDA AJUSTADA PARA ULO DOS LIMITES DE ENDIVIDAMENTO (VIII) = (VI - VII)
+
+26.278 .238, 30 27.168 .626, 91 28.713 .517, 89 29.326.781, 22
+% do TOTAL DAS GARANTIAS sobre a RCL AJUSTADA (V/VIII)
+
+SAO JOAO)DASERRA\- Pl
+
+0,00 0,00 0,00 0,00
+LIMITE DEFINIDO POR RESOLUÇÃO DO SENADO FEDERAL 22.00%
+5.781.212,43 6.065.097,92 6.404.973,94 6.539.891,87
+LIMITE DE ALERTA (inciso III do §1° art. 59 da LRF) 19.80% 2
+5.203.091,18 5.458.588,13 5.764.476, 54 5.885.902, 68
+AOS ESTADOS (I) 0,00 0,00 0,00
+Em Operações de Crédito Externas 0,00 0,00 0,00
+Em Operações de Crédito Internas 0,00 0,00 0,00
+AOS MUNICÍPIOS (II) 0,00 0,00 0,00
+Em Operações de Crédito Externas 0,00 0,00 0,00
+Em Operações de Crédito Internas 0,00 0,00 0,00
+ÀS ENTIDADES CONTROLADAS (III) 0,00 0,00 0,00
+Em Operações de Crédito Externas 0,00 0,00 0,00
+Em Operações de Crédito Internas 0,00 0,00 0,00
+EM GARANTIAS POR MEIO DE FUNDOS E PROGRAMAS (XII) 0,00 0,00 0,00
+TOTAL CONTRAGARANTIAS RECEBIDAS (XIII) = (IX + X + XI + XII) 0,00 0,00 0,00
+
+MEDIDAS CORRETIVAS:
+
+FONTE: Sistema............: Scp21H(Sistema de Contabilidade Pública) -www.simplesinformatica.com (14) (1
+Unidade Responsável: SETOR DE CONTABILIDADE (<1) fy
+Data da Emissão....: 12/02/2025, 17:14:58 10, dz
+(Go)
+one
+=
+a 0)
+; e Lo Rock. te 13
+E msi Pj de}
+ADRIANA GOMES DA ROCHA ANTONIO ALVES DE ALMEIDA ar (o)
+SECRETARIA DE FINANCAS CONTROLADOR GERAL DO MUNICIPIO
+CPF: 327.908.993-04 CPF; 474.370.223-20 CPF: 031.610.593-79 mm
+PREENCHIDO CONFORME MANUAL DE DEMONSTRATIVOS FISCAIS, EDIÇÃO: 2024 www. simplesinformatica.com
+
+ERE
+
+Diario Oficial dos Municipios
+
+A prova documental dos atos municipais

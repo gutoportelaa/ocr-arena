@@ -1,0 +1,9 @@
+{
+  "engine": "unlimited_ocr",
+  "pdf": "doc7.pdf",
+  "page": 7,
+  "success": false,
+  "error": "Torch not compiled with CUDA enabled",
+  "execution_time": 0.0,
+  "metadata": {}
+}

@@ -1,0 +1,32 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc7",
+  "page": 2,
+  "success": true,
+  "error": null,
+  "execution_time": 13.439846847999434,
+  "metadata": {
+    "total_duration": 13430263319,
+    "load_duration": 125524504,
+    "prompt_eval_count": 1050,
+    "eval_count": 88,
+    "data": [
+      {
+        "type": "object",
+        "value": "CONTRATO DE MANDATO"
+      },
+      {
+        "type": "object",
+        "value": "CONTRATO DE MANDATO"
+      },
+      {
+        "type": "object",
+        "value": "CONTRATO DE MANDATO"
+      },
+      {
+        "type": "object",
+        "value": "CONTRATO DE MANDATO"
+      }
+    ]
+  }
+}

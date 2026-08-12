@@ -1,0 +1,9 @@
+{
+  "engine": "olmocr2",
+  "pdf": "doc10",
+  "page": 1,
+  "success": false,
+  "error": "model 'richardyoung/olmocr2' not found (status code: 404)",
+  "execution_time": 0.0,
+  "metadata": {}
+}

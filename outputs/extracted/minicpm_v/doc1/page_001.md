@@ -1,0 +1,1 @@
+{ "data": "2025-02-20", "events": [ { "type": "birth", "value": "JANUARY 6TH, 2021" }, { "type": "death", "value": "FEBRUARY 20TH, 2021" } ] }

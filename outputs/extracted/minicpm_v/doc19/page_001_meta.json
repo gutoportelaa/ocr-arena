@@ -1,0 +1,18 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc19",
+  "page": 1,
+  "success": true,
+  "error": null,
+  "execution_time": 6.617121471001155,
+  "metadata": {
+    "total_duration": 6602746800,
+    "load_duration": 2940241171,
+    "prompt_eval_count": 1050,
+    "eval_count": 48,
+    "data": "2025-04-29",
+    "id": "00047F3",
+    "name": "Jeremias Tessore",
+    "email": "jessica.tessore@terra.com.br"
+  }
+}

@@ -1,0 +1,1 @@
+{ "data": "2021-03-17 14:25:23", "tags": [ "MORRO", "CONTRATO", "PREFEITO", "CITYHALL", "MUNICIPAL" ] }

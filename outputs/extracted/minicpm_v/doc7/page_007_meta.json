@@ -1,0 +1,24 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc7",
+  "page": 7,
+  "success": true,
+  "error": null,
+  "execution_time": 11.113499043000047,
+  "metadata": {
+    "total_duration": 11094465248,
+    "load_duration": 164286502,
+    "prompt_eval_count": 1050,
+    "eval_count": 36,
+    "data": [
+      {
+        "type": "button",
+        "value": "1"
+      },
+      {
+        "type": "button",
+        "value": "2"
+      }
+    ]
+  }
+}

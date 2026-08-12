@@ -1,0 +1,11 @@
+{
+  "engine": "tesseract",
+  "pdf": "doc14",
+  "page": 1,
+  "success": true,
+  "error": null,
+  "execution_time": 3.4117067989427596,
+  "metadata": {
+    "lang": "por+eng"
+  }
+}

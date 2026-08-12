@@ -1,0 +1,1 @@
+{ "data": [ { "type": "prefeitura", "value": "Prefeitura Municipal de Juazeiro" }, { "type": "municipio", "value": "Município de Juazeiro" }, { "type": "ano", "value": "2025" } ] }

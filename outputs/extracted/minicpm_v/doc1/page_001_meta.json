@@ -1,0 +1,25 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc1",
+  "page": 1,
+  "success": true,
+  "error": null,
+  "execution_time": 15.59699736499897,
+  "metadata": {
+    "total_duration": 15585516945,
+    "load_duration": 3319283552,
+    "prompt_eval_count": 1050,
+    "eval_count": 67,
+    "data": "2025-02-20",
+    "events": [
+      {
+        "type": "birth",
+        "value": "JANUARY 6TH, 2021"
+      },
+      {
+        "type": "death",
+        "value": "FEBRUARY 20TH, 2021"
+      }
+    ]
+  }
+}

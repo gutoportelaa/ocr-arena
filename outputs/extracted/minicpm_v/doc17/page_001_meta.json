@@ -1,0 +1,28 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc17",
+  "page": 1,
+  "success": true,
+  "error": null,
+  "execution_time": 18.204540042002918,
+  "metadata": {
+    "total_duration": 18194259372,
+    "load_duration": 3437217902,
+    "prompt_eval_count": 1050,
+    "eval_count": 70,
+    "data": [
+      {
+        "id": "1",
+        "title": "Portaria N\u00ba 98/2015"
+      },
+      {
+        "id": "2",
+        "title": "Art. 1\u00ba"
+      },
+      {
+        "id": "3",
+        "title": "Portaria N\u00ba 39/2025"
+      }
+    ]
+  }
+}

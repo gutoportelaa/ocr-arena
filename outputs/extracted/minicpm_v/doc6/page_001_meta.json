@@ -1,0 +1,14 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc6",
+  "page": 1,
+  "success": true,
+  "error": null,
+  "execution_time": 884.3455750329995,
+  "metadata": {
+    "total_duration": 884326479431,
+    "load_duration": 2977662585,
+    "prompt_eval_count": 1050,
+    "eval_count": 20480
+  }
+}

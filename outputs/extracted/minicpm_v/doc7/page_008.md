@@ -1,0 +1,1 @@
+{ "data": "2025.", "diario_oficial_municipal": "Diário Oficial do Município de Piauí", "email": "prefeitura@piaui.com.br", "id": "151906247D", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Logo_do_Municipio_de_Piaui.svg/220px-Logo_do_Municipio_de_Piaui.svg.png", "name": "Município de Piauí", "phone": "(86) 9504-120-000", "website": "www.piaui.com.br" }

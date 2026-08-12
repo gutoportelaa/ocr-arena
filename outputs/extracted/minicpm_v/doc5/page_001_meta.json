@@ -1,0 +1,44 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc5",
+  "page": 1,
+  "success": true,
+  "error": null,
+  "execution_time": 16.31366593400162,
+  "metadata": {
+    "total_duration": 16301104168,
+    "load_duration": 3010557452,
+    "prompt_eval_count": 1050,
+    "eval_count": 281,
+    "data": [
+      {
+        "id": "Id:05D50FF9A-2728",
+        "text": "Identificador do Processo: 05D50FF9A-2728"
+      },
+      {
+        "id": "CNJP N\u00ba MUNICIPAL 74/2020",
+        "text": "C\u00f3digo de Processo Civil da Justi\u00e7a Municipal N\u00ba 74/2020"
+      },
+      {
+        "id": "TERMO DE COLABORA\u00c7\u00c3O N\u00ba 01/2025",
+        "text": "Termo de Colabora\u00e7\u00e3o N\u00ba 01/2025, celebrado entre o Munic\u00edpio e a Prefeitura Municipal do Jata\u00ed"
+      },
+      {
+        "id": "Prefeitura Municipal do Jata\u00ed",
+        "text": "Prefeitura Municipal do Jata\u00ed"
+      },
+      {
+        "id": "Prefeito da Cidade de Jata\u00ed",
+        "text": "Prefeito da Cidade de Jata\u00ed"
+      },
+      {
+        "id": "Prefeitura do Munic\u00edpio de Jata\u00ed",
+        "text": "Prefeitura do Munic\u00edpio de Jata\u00ed"
+      },
+      {
+        "id": "Prefeito do Munic\u00edpio de Jata\u00ed",
+        "text": "Prefeito do Munic\u00edpio de Jata\u00ed"
+      }
+    ]
+  }
+}

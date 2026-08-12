@@ -1,0 +1,24 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc13",
+  "page": 1,
+  "success": true,
+  "error": null,
+  "execution_time": 7.702738136000335,
+  "metadata": {
+    "total_duration": 7690858123,
+    "load_duration": 3468258637,
+    "prompt_eval_count": 1050,
+    "eval_count": 61,
+    "data": [
+      {
+        "id": "646",
+        "title": "Prefeitura Municipal de Jata\u00ed"
+      },
+      {
+        "id": "0047F3B6E85CEC2A",
+        "title": "Prefeitura Municipal de Jata\u00ed"
+      }
+    ]
+  }
+}

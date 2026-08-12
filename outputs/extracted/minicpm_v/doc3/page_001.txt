@@ -1,0 +1,1 @@
+{ "data": [ { "type": "license", "text": "Creative Commons Attribution 4.0 International" }, { "type": "logo", "text": "CC BY 4.0" } ] }

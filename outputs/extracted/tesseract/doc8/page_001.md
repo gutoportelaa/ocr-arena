@@ -1,0 +1,176 @@
+— Sorgo
+
+d:05D508E2EF847835
+
+6
+PREFEITURA MUNICIPAL DE PREFEITURA MUNICIPAL DE SANTO ANTÔNIO DE LISBOA-PIAUÍ
+ANTÔNIO
+DE LISBOA
+autos, constiraicdo am futuro medhor/
+
+CNPJ: 06.553.820/0001-97
+Endereço: Rua Anaíta Rocha, nº 32, Centro, Fone: (89) 9 8101-8090
+EXTRATO DE TERMO ADITIVO DE CONTRATO Nº 041/2025
+
+CEP: 64640-000 E-mail: prefeituradesal@gmail.com
+
+OBJETO: PRIMEIRO TERMO ADITIVO DE CONTRATO PARA A CONTRATAÇÃO DE EMPRESA
+ESPECIALIZADA PARA EXECUÇÃO DE SERVIÇOS DE REABILITAÇÃO ESTRUTURAL,
+ADEQUAÇÃO FUNCIONAL E MODERNIZAÇÃO DE QUADRA POLIESPORTIVA COBERTA,
+COM INTERVENÇÕES EM ELEMENTOS CONSTRUTIVOS DE MATERIAIS MISTOS,
+CONFORME DIRETRIZES TÉCNICAS DE ENGENHARIA CIVIL, VISANDO À CONFORMIDADE
+NORMATIVA, SEGURANÇA ESTRUTURAL E AMPLIAÇÃO DA VIDA ÚTIL DO EQUIPAMENTO
+PÚBLICO.
+
+O presente Termo Aditivo tem por objeto o acréscimo do valor de R$ 19.889,00 (dezenove mil, oitocentos
+e oitenta e nove reais), que corresponde a 24,39%, respeitando o limite do valor inicial atualizado do
+contrato na forma do artigo 125 da Lei nº 14.133, de 2021 e cláusula quarta do contrato em comento.
+
+Contratante: Município de Santo Antônio de Lisboa — PI
+Contratado: CONSTRUTORA JULIA LTDA, CNPJ Nº 59.327.786/0001-07
+Fundamentação: art. 125 da lei nº 14.133/2021
+
+Data da assinatura: 14 de novembro de 2025
+
+Id:09FED94C082272F2
+
+y ESTADO DO PIAUÍ una:
+RA. PREFEITURA MUNICIPAL DE pesa
+MORRO MORRO CABEÇA NO TEMPO | gygaxe5s0
+
+CABEÇA NO TEMPO Comissão Permanente de Licitação
+
+EXTRATO DE CONTRATO ADMINISTRATIVO Nº 114/2025
+REFERÊNCIA: CONCORRÊNCIA ELETRÔNICA Nº 005/2025
+OBJETO: CONTRATAÇÃO DE EMPRESA DE ENGENHARIA PARA EXECUÇÃO DE REFORMA DA
+ESCOLA MUNICIPAL CALDEIRÃO NO MUNICÍPIO DE MORRO CABEÇA NO TEMPO-PI, CONFORME
+PROJETO BÁSICO.
+CONTRATADA: MARQUES & OTONIEL LTDA.
+CNPJ: 40.754.828/0001-50
+VALOR TOTAL: R$ 248.243,89 (duzentos e quarenta e oito mil e duzentos e quarenta e três reais e oitenta e nove
+centavos)
+VIGÊNCIA: 12 MESES
+DATA DA ASSINATURA: 17/11/2025.
+FUNDAMENTO LEGAL: LEI Nº 14.133, DE 1º DE ABRIL DE 2021.
+FONTE PAGADORA: 1500, 1569, 1541, 1542, 1540.
+
+Id:0CC5643CC33672F0
+ESTADO DO PIAUÍ
+
+e
+RA. PREFEITURA MUNICIPAL DE
+
+MORRO MORRO CABEÇA NO TEMPO
+
+CABEÇA NO TEMPO Comissão Permanente de Licitação
+
+EXTRATO DE CONTRATO ADMINISTRATIVO Nº 113/2025
+REFERÊNCIA: CONCORRÊNCIA ELETRÔNICA Nº 006/2025
+OBJETO: CONTRATAÇÃO DE EMPRESA DE ENGENHARIA PARA EXECUÇÃO DE PAVIMENTAÇÃO
+DA RUA DA GLÓRIA NO MUNICÍPIO DE MORRO CABEÇA NO TEMPO-PI, CONFORME PROJETO
+URBANÍSTICO.
+CONTRATADA: AAR COMERCIO E SERVICO LTDA.
+CNPJ: 41.479.943/0001-26.
+VALOR TOTAL: R$ 386.376,43 (trezentos e oitenta e seis mil e trezentos e setenta e seis reais e quarenta e três
+centavos).
+VIGÊNCIA: 12 MESES.
+DATA DA ASSINATURA: 17/11/2025.
+FUNDAMENTO LEGAL: LEI Nº 14.133, DE 1º DE ABRIL DE 2021.
+FONTE PAGADORA: 1500, 1700, 1706.
+
+Ano XXIII + Teresina (PI) - Quarta-Feira, 19 de Novembro de 2025 * Edição VCDLII
+
+307
+
+Id:030E7DF2347076CB
+
+Estado do Piauí
+Poder Legislativo sue Play,
+
+Camara Municipal de Campo Maior
+Praça Bona Primo, s/n - CNPJ nº 41.279.571/0001-94
+
+Fone: (86) - 3252-4400
+
+Email: camaradecampomaior@hotmail.com
+
+Site: www.campomaior.pi.leg.br
+
+EXTRATO DE CONTRATO
+
+DISPENSA DE LICITAÇÃO Nº 022/2025
+
+Fundamentação legal: Art. 75, Il da Lei nº 14.133/2021
+Contratante: Camara Municipal de Campo Maior — PI
+Contratada: PROLDATA LTDA
+
+CNPJ nº 49.650.840/0001-99
+
+Objeto: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA
+PARA A PRESTAÇÃO DE SERVIÇOS DE ASSESSORIA E
+CONSULTORIA EM GESTÃO PATRIMONIAL, PÚBLICA, A FIM
+DE ACOMPANHAR, COORDENAR, FISCALIZAR E GERIR O
+PATRIMÔNIO PÚBLICO MUNICIPAL APÓS A REALIZAÇÃO
+DO LEVANTAMENTO PATRIMONIAL DOS BENS MÓVEIS,
+PERMANENTES (MOBILIÁRIO, VEÍCULOS, MÁQUINAS,
+IMPLEMENTOS E FERRAMENTAS), ATRAVÉS DE SISTEMA
+INFORMATIZADO (APP MOBILE, ANDROID E/OU IOS,
+SISTEMA ON/OFF), PARA A CÂMARA MUNICIPAL DE
+CAMPO MAIOR.
+
+Valor Mensal: R$ 20.000,00 (vinte mil reais).
+
+Recursos Financeiros: Orçamento Geral da Câmara Municipal
+de Campo Maior-PI.
+
+Assinatura:17/11/2025.
+
+Vigéncia: 16 de janeiro de 2026.
+
+WELLINGTON FRANCISCO LUSTOSA SENA
+Presidente da Câmara Municipal de Campo Maior-PI
+
+Id:O9FED94C082276CE
+
+Estado do Piaui
+Poder Legislativo _ . PA SA
+Câmara Municipal de Campo Maior
+
+Praça Bona Primo, s/n - CNPJ nº 41.279.571/0001-94
+Fone: (86) - 3252-4400
+
+Email: camaradecampomaior@hotmail.com
+
+Site: www.campomaior.pi.leg.br
+
+EXTRATO DE CONTRATO
+
+DISPENSA DE LICITAÇÃO Nº 023/2025
+
+Fundamentação legal: Art. 75, Il da Lei nº 14.133/2021
+Contratante: Câmara Municipal de Campo Maior — PI
+Contratada: PROLDATA LTDA
+
+CNPJ nº 49.650.840/0001-99
+
+Objeto: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA
+PARA REALIZAÇÃO DOS SERVIÇOS DE DIGITALIZAÇÃO,
+TRATAMENTO DE IMAGENS, INDEXAÇÃO AUTOMÁTICA E
+ACONDICIONAMENTO DE DOCUMENTOS PARA A CÂMARA
+MUNICIPAL DE CAMPO MAIOR - PI.
+
+Valor Mensal: R$ 57.000,00 (cinquenta e sete mil reais)
+Recursos Financeiros: Orçamento Geral da Câmara Municipal
+de Campo Maior-PI.
+
+Assinatura: 18/11/2025.
+
+Vigência: 17 de janeiro de 2026.
+
+WELLINGTON FRANCISCO LUSTOSA SENA
+Presidente da Câmara Municipal de Campo Maior-Pl
+
+Diário Oficial dos Municípios
+
+A prova documental dos atos municipais
+

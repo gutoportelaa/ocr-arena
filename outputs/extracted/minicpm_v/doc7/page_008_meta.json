@@ -1,0 +1,22 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc7",
+  "page": 8,
+  "success": true,
+  "error": null,
+  "execution_time": 15.678188890000456,
+  "metadata": {
+    "total_duration": 15666671778,
+    "load_duration": 122416647,
+    "prompt_eval_count": 1050,
+    "eval_count": 139,
+    "data": "2025.",
+    "diario_oficial_municipal": "Di\u00e1rio Oficial do Munic\u00edpio de Piau\u00ed",
+    "email": "prefeitura@piaui.com.br",
+    "id": "151906247D",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Logo_do_Municipio_de_Piaui.svg/220px-Logo_do_Municipio_de_Piaui.svg.png",
+    "name": "Munic\u00edpio de Piau\u00ed",
+    "phone": "(86) 9504-120-000",
+    "website": "www.piaui.com.br"
+  }
+}

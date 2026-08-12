@@ -1,0 +1,22 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc8",
+  "page": 1,
+  "success": true,
+  "error": null,
+  "execution_time": 7.401397319001262,
+  "metadata": {
+    "total_duration": 7389854477,
+    "load_duration": 3433481633,
+    "prompt_eval_count": 1050,
+    "eval_count": 54,
+    "data": "2021-03-17 14:25:23",
+    "tags": [
+      "MORRO",
+      "CONTRATO",
+      "PREFEITO",
+      "CITYHALL",
+      "MUNICIPAL"
+    ]
+  }
+}

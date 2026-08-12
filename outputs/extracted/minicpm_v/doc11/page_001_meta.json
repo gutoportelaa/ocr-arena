@@ -1,0 +1,34 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc11",
+  "page": 1,
+  "success": true,
+  "error": null,
+  "execution_time": 22.574723343997903,
+  "metadata": {
+    "total_duration": 22563042375,
+    "load_duration": 3299357533,
+    "prompt_eval_count": 1050,
+    "eval_count": 197,
+    "data": [
+      {
+        "id": 0,
+        "title": "CONTRATO DE SERVI\u00c7O P\u00daBLICO",
+        "content": "CONTRATO DE SERVI\u00c7O P\u00daBLICO N\u00ba 0001/2021",
+        "date": "29 de julho de 2021"
+      },
+      {
+        "id": 1,
+        "title": "CONTRATO DE SERVI\u00c7O P\u00daBLICO",
+        "content": "CONTRATO DE SERVI\u00c7O P\u00daBLICO N\u00ba 0002/2021",
+        "date": "29 de julho de 2021"
+      },
+      {
+        "id": 2,
+        "title": "CONTRATO DE SERVI\u00c7O P\u00daBLICO",
+        "content": "CONTRATO DE SERVI\u00c7O P\u00daBLICO N\u00ba 0003/2021",
+        "date": "29 de julho de 2021"
+      }
+    ]
+  }
+}

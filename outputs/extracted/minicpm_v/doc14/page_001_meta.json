@@ -1,0 +1,64 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc14",
+  "page": 1,
+  "success": true,
+  "error": null,
+  "execution_time": 28.67783921999944,
+  "metadata": {
+    "total_duration": 28667221793,
+    "load_duration": 2984775746,
+    "prompt_eval_count": 1050,
+    "eval_count": 381,
+    "data": [
+      {
+        "type": "handwritten",
+        "text": "C87"
+      },
+      {
+        "type": "printed",
+        "text": "B92A2E4155C8VLL"
+      },
+      {
+        "type": "stamped",
+        "text": "PORTARIA N\u00ba 231/2025"
+      },
+      {
+        "type": "printed",
+        "text": "Gabinete do Prefeito"
+      },
+      {
+        "type": "handwritten",
+        "text": "CAMPO MAIOR"
+      },
+      {
+        "type": "printed",
+        "text": "DA SECRETARIA MUNICIPAL DE ORGANIZA\u00c7\u00c3O CIVIL E COMUNICA\u00c7\u00c3O SOCIAL"
+      },
+      {
+        "type": "stamped",
+        "text": "ID:09FEB81B419F"
+      },
+      {
+        "type": "handwritten",
+        "text": "ANDR\u00c9 DA SILVA"
+      },
+      {
+        "type": "printed",
+        "text": "MUNICIPAL DE CAMPO MAIOR, no uso de suas atribui\u00e7\u00f5es legais e em cumprimento ao disposto na Lei Org\u00e2nica Municipal, art. 54, inciso I, da Lei Org\u00e2nica do Munic\u00edpio, art. 233/2025"
+      },
+      {
+        "type": "stamped",
+        "text": "EFEITIVADO PELA PREFEITURA DE CAMPO MAIOR, no dia 02/01/2025"
+      },
+      {
+        "type": "printed",
+        "text": "MUNICIPALIDADE DE CAMPO MAIOR, Estado da Bahia"
+      },
+      {
+        "type": "stamped",
+        "text": "APROVADO PELA PREFEITURA MUNICIPAL DE CAMPO MAIOR, no dia 02/01/2025"
+      }
+    ]
+  }
+}

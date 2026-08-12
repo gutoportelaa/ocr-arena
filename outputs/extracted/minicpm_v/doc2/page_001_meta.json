@@ -1,0 +1,28 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc2",
+  "page": 1,
+  "success": true,
+  "error": null,
+  "execution_time": 15.735518486999354,
+  "metadata": {
+    "total_duration": 15724341474,
+    "load_duration": 3434812203,
+    "prompt_eval_count": 1050,
+    "eval_count": 68,
+    "data": [
+      {
+        "type": "prefeitura",
+        "value": "Prefeitura Municipal de Juazeiro"
+      },
+      {
+        "type": "municipio",
+        "value": "Munic\u00edpio de Juazeiro"
+      },
+      {
+        "type": "ano",
+        "value": "2025"
+      }
+    ]
+  }
+}

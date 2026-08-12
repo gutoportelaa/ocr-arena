@@ -1,0 +1,11 @@
+{
+  "engine": "tesseract",
+  "pdf": "doc7",
+  "page": 8,
+  "success": true,
+  "error": null,
+  "execution_time": 3.2500938000157475,
+  "metadata": {
+    "lang": "por+eng"
+  }
+}

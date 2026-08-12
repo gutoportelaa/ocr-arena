@@ -1,0 +1,48 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc7",
+  "page": 6,
+  "success": true,
+  "error": null,
+  "execution_time": 16.164500161001342,
+  "metadata": {
+    "total_duration": 16145060876,
+    "load_duration": 147537447,
+    "prompt_eval_count": 1050,
+    "eval_count": 152,
+    "data": [
+      {
+        "type": "inline",
+        "content": "5.6.1"
+      },
+      {
+        "type": "inline",
+        "content": "5.6.2"
+      },
+      {
+        "type": "inline",
+        "content": "5.6.3"
+      },
+      {
+        "type": "inline",
+        "content": "5.6.4"
+      },
+      {
+        "type": "inline",
+        "content": "5.6.5"
+      },
+      {
+        "type": "inline",
+        "content": "5.6.6"
+      },
+      {
+        "type": "inline",
+        "content": "5.6.7"
+      },
+      {
+        "type": "inline",
+        "content": "5.6.8"
+      }
+    ]
+  }
+}

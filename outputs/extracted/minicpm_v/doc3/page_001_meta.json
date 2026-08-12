@@ -1,0 +1,24 @@
+{
+  "engine": "minicpm_v",
+  "pdf": "doc3",
+  "page": 1,
+  "success": true,
+  "error": null,
+  "execution_time": 15.123082889000216,
+  "metadata": {
+    "total_duration": 15112976155,
+    "load_duration": 3062943984,
+    "prompt_eval_count": 1050,
+    "eval_count": 48,
+    "data": [
+      {
+        "type": "license",
+        "text": "Creative Commons Attribution 4.0 International"
+      },
+      {
+        "type": "logo",
+        "text": "CC BY 4.0"
+      }
+    ]
+  }
+}
